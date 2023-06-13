@@ -1,0 +1,62 @@
+/* Import de la police d'écriture Syne */
+@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+
+/* Police d'écriture appliquée à tous les éléments de la page */
+body * {
+    font-family: 'Syne', sans-serif;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/************ HEADER ************/
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    background-color: #ffffff !important;
+}
+
+/* Zone WordPress d'intégration de logo */
+#masthead {
+    margin: 31px 0 31px 37px;
+    padding: 0;
+}
+
+/* Menu de navigation header */
+.liste-nav {
+    display: flex;
+    float: right;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    justify-content: flex-end;
+    gap: 60px;
+    margin: 31px 0px 31px 0;
+}
+
+.liste-nav a {
+    text-decoration: none;
+}
+
+.liste-nav a:hover {
+    font-weight: bold;
+}
+
+/* CSS spécifique à l'élement commander du nav */
+
+#commander {
+    background-color: #dc9f96;
+    padding: 31px 61px 31px 61px;
+}
+
+#commander a {
+    color:white;
+}
+
+#commander:hover {
+    background-color: #C02E44;
+}
