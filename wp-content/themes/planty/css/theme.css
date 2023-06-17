@@ -8,6 +8,15 @@ body * {
     margin-right: 0;
 }
 
+/* Désactivation des titres de page générés automatiquement par WordPress */
+.entry-title {
+    display: none;
+}
+
+.entry-header {
+    display: none;
+}
+
 /************ HEADER ************/
 
 header {
@@ -17,47 +26,46 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0;
-    background-color: #ffffff !important;
-}
-
-/* Zone WordPress d'intégration de logo */
-#masthead {
-    margin: 31px 0 31px 37px;
-    padding: 0;
+    background-color: #ffffff;
 }
 
 /* Menu de navigation header */
-.liste-nav {
+
+.primary-menu-container {
     display: flex;
-    float: right;
     flex-direction: row;
+    margin: 31px 0 31px 0;
+    height: 80px;
+    font-size: 19px;
+}
+
+.menu-wrapper {
+    display: flex;
     align-items: center;
-    list-style: none;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 60px;
-    margin: 31px 0px 31px 0;
 }
 
-.liste-nav a {
-    text-decoration: none;
+.menu-wrapper a {
+    text-decoration: none !important;
 }
 
-.liste-nav a:hover {
+.menu-wrapper a:hover {
     font-weight: bold;
 }
 
 /* CSS spécifique à l'élement commander du nav */
 
-#commander {
+#menu-item-371 {
     background-color: #dc9f96;
-    padding: 31px 61px 31px 61px;
+    padding: 15px 60px 15px 60px;
 }
 
-#commander a {
+#menu-item-371 a {
     color:white;
 }
 
-#commander:hover {
+#menu-item-371:hover {
     background-color: #C02E44;
 }
 
@@ -78,4 +86,10 @@ footer a {
 
 footer a:hover {
     font-weight: bold;
+}
+
+/************ CONTENU DU SITE ************/
+
+.site-content {
+    background-color: #ece2da;
 }
